@@ -1,4 +1,248 @@
-.banner{
-    background-color: #001D37;
-    color: #ffffff;
+/* Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* Add accessible line-height */
+    line-height: 1.5;
+    /* Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* Create a root stacking context */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+/*----------------End-Reset------------------*/
+:root {
+    --darkBlue: #001D37;
+    --gridinatBlue: rgba(96, 121, 255, 1);
+    --skyBlue: #475AFF;
+    --off-white: rgba(255, 255, 255, 0.24);
+    --gray: #9F9F9F;
+    --lightGray: #A2A2A2;
+}
+
+
+
+body {
+    background: radial-gradient(circle at 25% 0%, var(--gridinatBlue) 0%, rgba(255, 255, 255, 0) 25%),
+        radial-gradient(circle at 100% 25%, #D660FF 0%, rgba(255, 255, 255, 0) 25%),
+        var(--darkBlue);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+.banner {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    padding: 1rem;
+}
+
+.top-banner-area {
+    width: 50%;
+    margin-bottom: 9rem;
+}
+
+.banner h1 {
+    font-size: 6.25rem;
+}
+
+.top-banner-area p {
+    font-size: 1.1rem;
+    width: 70%;
+}
+
+.button-area {
+    margin-top: 3.15rem;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.button-fiil {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: var(--skyBlue);
+    padding: 1.1rem 3rem;
+    border-radius: 5.5rem;
+    margin-right: 1rem;
+    border: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border-radius: 5.5rem;
+    border: solid;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.card {
+    height: 15.75rem;
+    width: 25%;
+    padding: 2rem 1.5625rem;
+    border: solid 0.5px var(--off-white);
+    margin-right: 1rem;
+}
+
+.card img {
+    margin-bottom: 2.75rem;
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    margin-bottom: .25rem;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+.petSection {
+    background-color: white;
+}
+.petGrid{
+    padding-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.petGrid > h1{
+    font-size: 5.4rem;
+}
+.small-nav{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+}
+.small-nav p,a{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    color: var(--gray);
+    text-decoration: none;
+}
+.active{
+    text-decoration: underline;
+    color: blue;
+}
+.pet-card-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 7rem;
+}
+.pet-card{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--gray);
+
+    overflow: hidden;
+    width: 49%;
+    margin-bottom: 1rem;
+}
+.pet-card img{
+    width: 12.25rem;
+    height: 12.25rem;
+}
+.info-area{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.petName-area{
+    display: flex;
+    align-items : center;
+}
+.petName-area h3{
+    font-size: 1.625rem;
+    margin-right: 1rem;
+}
+.petName-area img{
+    width: 1.6rem;
+    height: 1.1rem;
+}
+.info-area p{
+    font-size: 1rem;
+}
+.year-area{
+    color: var(--lightGray);
+    font-size: .75rem;
+}
+footer{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+    color: var(--lightGray);
 }
