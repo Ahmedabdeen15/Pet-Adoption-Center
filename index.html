@@ -36,14 +36,14 @@
                     <img src="assets\icons\emoji-kiss 1.svg" alt="Sun Icon">
                     <h3>Dedicated Staff</h3>
                     <p>Our center has over 70 volunteers who play with the pets four times daily.</p>
-    
+
                 </div>
                 <div class="card">
                     <img src="assets\icons\trophy 1.svg" alt="Sun Icon">
                     <h3>Voted #1</h3>
                     <p>For the last five years we’ve consistently been voted the #1 pet adoption center in the state.
                     </p>
-    
+
                 </div>
                 <div class="card">
                     <img src="assets\icons\moon-stars 1.png" alt="Sun Icon">
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="petSection">
             <div class="petGrid">
                 <h1>Meet Our Frinds</h1>
@@ -77,7 +77,9 @@
                         <div class="info-area">
                             <div class="petName-area">
                                 <h3>Barksalot</h3>
-                                <a href="/form_1.html"><img src="assets\icons\envelope-plus 1.svg" alt="envelope-icon"></a>
+                                <a href="#" class="openFormBtn"
+                                    data-img="assets\\image\\peri-stojnic-5Vr_RVPfbMI-unsplash 1.jpg" data-name="Barksalot"><img
+                                        src="assets\icons\envelope-plus 1.svg" alt="envelope-icon"></a>
                             </div>
                             <p>Barksalot is a sweet and lovable 3 year old ball of fluff. He loves carrots, celery, and
                                 playing
@@ -90,9 +92,12 @@
                         <div class="info-area">
                             <div class="petName-area">
                                 <h3>Meowsalot</h3>
-                                <a href="/form_2.html"><img src="assets\icons\envelope-plus 1.svg" alt="envelope-icon"></a>
+                                <a href="#" class="openFormBtn"
+                                    data-img="assets\\image\\peri-stojnic-5Vr_RVPfbMI-unsplash 2.jpg" data-name="Meowsalot"><img
+                                        src="assets\icons\envelope-plus 1.svg" alt="envelope-icon"></a>
                             </div>
-                            <p>Meowsalot is the most talkative cat we’ve ever come across. Constant meowing, chirping and
+                            <p>Meowsalot is the most talkative cat we’ve ever come across. Constant meowing, chirping
+                                and
                                 purring!</p>
                             <p class="year-area">2 years old</p>
                         </div>
@@ -102,9 +107,12 @@
                         <div class="info-area">
                             <div class="petName-area">
                                 <h3>Woof</h3>
-                                <a href="/form_3.html"><img src="assets\icons\envelope-plus 1.svg" alt="envelope-icon"></a>
+                                <a href="#" class="openFormBtn"
+                                    data-img="assets\\image\\peri-stojnic-5Vr_RVPfbMI-unsplash 3.jpg" data-name="Woof"><img
+                                        src="assets\icons\envelope-plus 1.svg" alt="envelope-icon"></a>
                             </div>
-                            <p>Woof is a very talkative and sweet pup. She loves beets, plums, cuddles and jumping over low
+                            <p>Woof is a very talkative and sweet pup. She loves beets, plums, cuddles and jumping over
+                                low
                                 fences.</p>
                             <p class="year-area">Less than a year old</p>
                         </div>
@@ -114,9 +122,12 @@
                         <div class="info-area">
                             <div class="petName-area">
                                 <h3>Purrsloud</h3>
-                                <a href="/form_4.html"><img src="assets\icons\envelope-plus 1.svg" alt="envelope-icon"></a>
+                                <a class="openFormBtn"
+                                    data-img="assets\\image\\peri-stojnic-5Vr_RVPfbMI-unsplash 4.jpg" data-name="Purrsloud"><img
+                                        src="assets\icons\envelope-plus 1.svg" alt="envelope-icon"></a>
                             </div>
-                            <p>Purrsloud has the loudest and most relaxing purr that’s come through our center. Come hear it
+                            <p>Purrsloud has the loudest and most relaxing purr that’s come through our center. Come
+                                hear it
                                 yourself.</p>
                             <p class="year-area">4 year old</p>
                         </div>
@@ -128,6 +139,29 @@
             <p>© 2023 Fake Adoption Center. All rights reserved.</p>
         </footer>
     </div>
+    <div id="formOverlay" class="hidden">
+        <section class="form">
+            <div class="form-card">
+                <div class="info-form" id="bgInfoForm">
+                    <div class="bg-info-form">
+                        <p>Thank you for your interest in</p>
+                        <h1 id="name">Barksalot.</h1>
+                    </div>
+                </div>
+                <form action="/submit" method="get" class="form-input" id="popupForm">
+                    <input type="text" name="name" placeholder="Name" id="name">
+                    <input type="email" name="email" placeholder="Email Address" id="email">
+                    <input type="text" name="animalName" placeholder="What is the word for a baby dog?" id="animalName">
+                    <textarea name="Comment" id="" placeholder="Comment (optional)"></textarea>
+                    <div class="submit">
+                        <input type="submit">
+                    </div>
+                </form>
+                <div class="icon-x-form">
+                        <a href="#" id="closeForm" class="close-btn">X</a>
+                </div>
+            </div>
+            <script src="main.js"></script>
 </body>
 
 </html>
