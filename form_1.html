@@ -5,29 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
-    <section class="form">
-        <table>
-            <tr>
-                <td>
-                    <img src="assets\image\peri-stojnic-5Vr_RVPfbMI-unsplash 1.jpg" alt="Dog 1">
-                    <p>Thank you for your interest in</p>
-                    <h1>Barksalot.</h1>
-                </td>
-                <td>
-                    <form action="\submit" method="get">
-                        <input type="text" name="name" placeholder="Name" id="name"><br>
-                        <input type="email"name="email" placeholder="Email Address" id="email"><br>
-                        <input type="text" name="animalName" placeholder="What is the word for a baby dog?" id="animalName"><br>
-                        <textarea name="Comment" id="" placeholder="Comment (optional)"></textarea><br>
+    <div id="formOverlay">
+        <section class="form">
+            <div class="form-card">
+                <div class="info-form">
+                    <!-- <img src="assets\image\peri-stojnic-5Vr_RVPfbMI-unsplash 1.jpg" alt="Dog 1"> -->
+                    <div class="bg-info-form">
+                        <p>Thank you for your interest in</p>
+                        <h1>Barksalot.</h1>
+                    </div>
+                </div>
+                <form action="/submit" method="get" class="form-input">
+                    <input type="text" name="name" placeholder="Name" id="name">
+                    <input type="email" name="email" placeholder="Email Address" id="email">
+                    <input type="text" name="animalName" placeholder="What is the word for a baby dog?" id="animalName">
+                    <textarea name="Comment" id="" placeholder="Comment (optional)"></textarea>
+                    <div class="submit">
                         <input type="submit">
-                    </form>
-                </td>
-            </tr>
-        </table>
-    </section>
+                    </div>
+                </form>
+                <div class="icon-x-form">
+                    <p>X</p>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
