@@ -117,7 +117,7 @@ body {
 
 }
 
-.button-fiil {
+.button-fill {
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
@@ -387,5 +387,87 @@ textarea {
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+@media only screen and (max-width: 1024px){
+    *{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 768px){
+    *{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 425px){
+    *{
+        font-size: 16px;
+    }
+    .top-banner-area{
+        width: auto;
+    }
+    .banner h1{
+        font-size: 4.3rem;
+        padding-bottom: 2rem;
+    }
+    .button-area{
+        flex-direction: column;
+    }
+    .button-fill{
+        margin-bottom: 2rem;
+    }
+    .button{
+        padding: 1rem 2.3rem;
+    }
+    .card-area{
+        flex-direction: column;
+    }
+    .card{
+        width: auto;
+        margin-bottom: 2rem;
+    }
+    .petGrid>h1{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    .small-nav p, a{
+        font-size: 1rem;
+    }
+    .pet-card-grid{
+        flex-direction: column;
+    }
+    .pet-card{
+        width: auto;
+    }
+    .info-area{
+        padding: 0.5rem .4rem;
+    }
+    .petName-area h3{
+        font-size: 1rem;
+    }
+    .petName-area{
+        justify-content: space-around;
+    }
+    .petName-area img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .info-area p{
+        font-size: 0.85rem;
+    }
+    .info-form{
+        display: none;
+    }
+    .form-input input, textarea{
+        width: 20rem;
+    }
+    .form-input{
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    *{
+        font-size: 12px;
     }
 }
